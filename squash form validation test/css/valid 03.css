@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+.container
+{
+	width:70%;
+	height:870px;
+	background-color:#E8E8E8;
+	overflow: hidden;
+	margin: auto 0px;
+	margin-left: 180px;
+}
+nav
+{
+	width:100%;
+	height:50px;
+	background-color:#07625E;
+	float: left;
+}
+nav ul
+{
+	text-decoration: none;
+	color: white;
+	margin-left:-4%;
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+nav ul li
+{
+	text-decoration: none;
+	display: inline;
+	margin-left: 12%;
+}
+nav ul li a
+{
+	text-decoration: none;
+	color: white;
+}
+.active, nav ul li:hover
+{
+	color:forestgreen;
+	border-radius: 4px;
+}
+.active1, nav ul li:hover
+{
+	color:forestgreen;
+	border-radius: 4px;
+}
+.active2, nav ul li:hover
+{
+	color: orangered;
+	border-radius: 4px;
+}
+nav .fa
+{
+	margin-right: 1%;
+}
+h1
+{
+	margin-left: 35%;
+	margin-top: 10px;
+	float: left;
+}
+.box
+{
+	width: 65%;
+	height: 400px;
+	background-color: white;
+	float: left;
+	margin-left: 16%;
+}
+h3
+{
+	color: #565151;
+	font-size: 15px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+input[type=number]{
+	width: 10%;
+	height: 20px;
+	margin-right: 1%;
+	margin-left: 7%;
+	margin-top: 40px;
+}
+.back
+{
+	width: 20%;
+	height: 30px;
+	background-color:#DFD8D8;
+	float: left;
+	margin-top: 50px;
+	margin-left:43px
+}
+.back h5
+{
+	color: black;
+	margin-top: 6px;
+	margin-left: 40px;
+}
+input[type=submit]
+{
+	width: 67%;
+	height: 30px;
+	background-color:orangered;
+	float: left;
+	margin-top:50px;
+	margin-left: 1%;
+}
+.end
+{
+	width:100%;
+	height: 30px;
+	border-top:outset #E3E3E3;
+	float: left;
+	margin-top: 9%;
+}
+.end p
+{
+	margin-left: 20%;
+	float: left;
+	margin-top:12%;
+}
+
+.end p1
+{
+	color: orangered;
+}
+.end p a
+{
+	text-decoration: none;
+	color: orangered;
+}
+@media only screen and (max-width:800px){
+	.container{
+		width: 100%;
+		margin-left: 0px;
+	}
+	h1{
+	margin-left:28%;
+	font-size:20px;
+	}
+	nav {
+	width:100%;
+	height:120px;
+	}
+	nav ul{
+	margin-left:10%;
+	font-size: 20px;
+	
+	}
+	nav ul li
+	{
+		display: list-item;
+		margin-bottom: 10px;
+	}
+	nav .fa{
+		margin-right: 7%;
+	}
+	
+	.box{
+		width: 100%;
+		margin-left: 0px;
+	}
+

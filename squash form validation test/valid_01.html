@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head> </head>
+<link rel="stylesheet" href="css/valid 01.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+	<div class="container">
+	<nav> <ul>
+		<li class="active"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><a href="#">Personal Details</a></li>
+		<li><a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i>Company Details</a></li>
+		<li><a href="#"><i class="fa fa-circle-o" aria-hidden="true"></i>Email Verification</a></li>
+		</ul> </nav>
+	<h1>Add your personal details</h1>
+	<div class="box">
+    <form name="myform" onsubmit="return validate()">
+        <label ><p>Full Name</p></label><br>
+        <input type="text" name="Name" pattern ="[A-Za-z]+"><br>
+        <label ><p>Gender</p></label><div class="bt">
+		 <input type="button" name="Gender_M" onclick="return Male(this)" onmouseover="return male(this)" Value="Male">
+        <input type="button" name="Gender_F" onclick="return Female(this)" onmouseover="return female(this)" Value="Female">
+        <input type="button" name="Gender_O" onclick="return Others(this)" onmouseover="return others(this)" Value="Others">
+       </div>
+        <label ><p>Country</p></label><br>
+        <select type="Country" name="Country"><br>
+            <option value="-1"></option>
+            <option value="1">India</option>
+            <option value="2">USA</option>
+        </select><br>
+        <label ><p>State</p></label><br>
+        <select type="State" name="State"><br>
+            <option value="-1"></option>
+            <option value="1">TamilNadu</option>
+            <option value="2">Kerala</option>
+        </select><br>
+        <label><p>Phone</p></label><br>
+        <select input type="tel" name="Phone">
+            <option value="-1"></option>
+            <option value="1">+91</option>
+            <option value="2">+1</option>
+            <input type="tel" name="Phone" pattern="[0-9]{10}">
+        </select><br>
+        <input type="submit" name="submit" value="Next" formaction="valid_02.html">
+    </form>
+    <script>
+        function validate()
+        {
+        var name=document.myform.Name.value;
+        var gender_M=document.myform.Gender_M.value;
+        var gender_F=document.myform.Gender_F.value;
+        var gender_O=document.myform.Gender_O.value;
+        var Country=document.myform.Country.value;
+        var State=document.myform.State.value;
+        var Phone=document.myform.Phone.value;
+        
+      
+        if(name=="")
+        {
+            alert("Please Enter Name");
+            return false;
+             
+        }if(gender_M==false && gender_F==false && gender_O==false)
+        {
+            alert("Please Enter Gender");
+            return false;
+             
+        }if(Country=="-1")
+        {
+            alert("Please Enter Country");
+            return false;
+             
+        }if(State=="-1")
+        {
+            alert("Please Enter State");
+            return false;
+
+        }if(Phone=="-1")
+        {
+            alert("Please Enter Phone Number");
+            return false;
+        }
+        }
+
+        function Male(x)
+        {
+        
+            x.style.background = "#FFE6CC"
+            x.style.color="orange"
+        }
+
+        function male(y)
+        {
+        
+            y.style.background = "white"
+            y.style.color="black"
+        }
+        function Female(x)
+        {
+        
+            x.style.background = "#FFE6CC"
+            x.style.color="orange"
+        }
+        
+        function female(y)
+        {
+        
+            y.style.background = "white"
+            y.style.color="black"
+        }
+        
+        function Others(x)
+        {
+    
+            x.style.background = "#FFE6CC"
+            x.style.color="orange"
+        }
+        function others(y)
+        {
+    
+            y.style.background = "white"
+            y.style.color="black"
+        }
+        
+        
+    </script>
+
+
+</div>
+</div>
+</body>
+</html>

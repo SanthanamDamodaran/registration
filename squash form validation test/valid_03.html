@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head> </head>
+<link rel="stylesheet" href="css/valid 03.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+	<div class="container">
+	<nav> <ul>
+		<li class="active"><i class="fa fa-check-circle-o" aria-hidden="true"></i><a href="#">Personal Details</a></li>
+		<li class="active1"><i class="fa fa-check-circle-o" aria-hidden="true"></i><a href="#">Company Details</a></li>
+		<li class="active2"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><a href="#">Email Verification</a></li>
+		</ul> </nav>
+	<h1>Enter your OTP</h1> 
+	<div class="box">
+    <form name="myform">
+		<h3>Enter your code</h3>
+        <input type="number" name="box" pattern="[0-9]">
+        <input type="number" name="box" pattern="[0-9]">
+        <input type="number" name="box" pattern="[0-9]">
+        <input type="number" name="box" pattern="[0-9]">
+        <input type="number" name="box" pattern="[0-9]"><br>
+        <a href="valid_02.html"> <div class="back"><h5>Back</h5></div> </a> 
+        <input type="submit" name="submit" value="Verify" formaction="squash04.html">
+		<div class="end"><p>Dint't receive the email? Check your spam filter for an email<br> from<a href="#"> <p1> name@domain.com</p1></a></p></div>
+    </form>
+<script>  
+
+function generateOTP() 
+{     
+    var digits = '0123456789'; 
+    let OTP = ''; 
+    for (let i = 0; i < 5; i++ ) 
+    { 
+        OTP += digits[Math.floor(Math.random() * 10)]; 
+    } 
+    return OTP; 
+} 
+  
+document.write("OTP of 5 digits: ") 
+document.write( generateOTP() ); 
+</script> 
+</body>
+</html>
